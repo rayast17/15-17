@@ -37,7 +37,6 @@ public class ATM {
 					double amount = sc.nextDouble();
 					accounts[id].deposit(amount);
 
-				} else {
 
 				}
 			}
