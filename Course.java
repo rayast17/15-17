@@ -17,7 +17,7 @@ public class Course {
 	public void dropStudent(String student) {
 		for (int i = 0; i < numberOfStudents; i++) {
 			if (students[i].equals(student)) {
-				for (int j = 0; j < numberOfStudents; j++) {
+				for (int j = i; j < numberOfStudents; j++) {
 					students[j] = students[j + 1];
 				}
 				students[numberOfStudents - 1] = null;
